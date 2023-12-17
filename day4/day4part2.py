@@ -13,14 +13,19 @@ for game in games:
             points+=1
     total.append(points)
 def calculateTotalOfCard(card):
+  #  print("Spawned card", card)
     global cardsUsed
     if card>len(games):
+    #    print("Finished")
         return 0
+    cardsUsed +=1
     score=total[card]
     if score==0:
+       # print("finished")
         return 0
-    for i in range(card,card+score):
+    for i in range(card+1,card+score+1):
         calculateTotalOfCard(i)
+   # print("finish")
 
 for i in range(len(total)):
     calculateTotalOfCard(i)
