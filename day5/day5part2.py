@@ -68,7 +68,7 @@ for amongus in range(100):
         print(f"unable to back up shit, ah well. Error: {E}")
         print(backup)
         print(bestseed)
-    results.append(bestseed)
+    #results.append(bestseed)
         
 print(results)
 print(min(results))

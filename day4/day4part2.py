@@ -1,5 +1,3 @@
-import sys
-sys.setrecursionlimit(999999999)
 with open("day4dataset.txt","r") as f:
     games=f.readlines()
 cardsUsed=0
